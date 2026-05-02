@@ -1,0 +1,36 @@
+.bg {
+  position: fixed;
+  inset: 0;
+  background: #ffffff;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* IMPORTANT: visible blobs first (we'll re-add blur later) */
+.blob {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  opacity: 0.7;
+  mix-blend-mode: multiply;
+}
+
+/* soft gradient colors */
+.b1 {
+  background: radial-gradient(circle, #60a5fa, transparent 70%);
+  top: -10%;
+  left: -10%;
+}
+
+.b2 {
+  background: radial-gradient(circle, #a78bfa, transparent 70%);
+  bottom: -15%;
+  right: -10%;
+}
+
+.b3 {
+  background: radial-gradient(circle, #34d399, transparent 70%);
+  top: 40%;
+  left: 50%;
+}
